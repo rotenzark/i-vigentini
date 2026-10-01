@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>I Vigentini · barbieri dal 1968 · Porta Vigentina, Milano</title>
 <meta name="description" content="I Vigentini, barbiere di Porta Vigentina a Milano dal 1968. Taglio, barba, rasatura classica e la barba ricamata — oggi in mano a tre donne. Un angolo di pace, su appuntamento.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%232E3D34'/><text x='50' y='70' font-size='52' text-anchor='middle' fill='%23B08D42' font-family='Georgia,serif' font-style='italic'>V</text></svg>">
 </head>
@@ -241,7 +240,7 @@
       </div>
     </div>
     <div class="mapbox">
-      <iframe title="Mappa — I Vigentini, Viale Beatrice d'Este 49 Milano" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=I+Vigentini+barbieri+dal+1968,+Viale+Beatrice+d'Este+49,+Milano&output=embed"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe title="Mappa — I Vigentini, Viale Beatrice d'Este 49 Milano" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=I+Vigentini+barbieri+dal+1968,+Viale+Beatrice+d'Este+49,+Milano&output=embed"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&destination=I+Vigentini+barbieri+Viale+Beatrice+d" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </div>
 </section>
@@ -307,25 +306,52 @@
     </div>
     <p class="disc" data-i18n="ft.disc">Sito dimostrativo indipendente creato per mostrare una possibile presenza online per I Vigentini. Foto, recensioni e dettagli provengono da fonti pubbliche (Google Maps e stampa) e appartengono ai rispettivi proprietari. Nessuna affiliazione con la bottega.</p>
   </div>
+  <p class="privacy-link"><a href="privacy.html">Privacy</a></p>
 </footer>
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"HairSalon",
-  "name":"I Vigentini barbieri dal 1968",
-  "description":"Barbiere tradizionale a Porta Vigentina, Milano, dal 1968. Taglio, barba, rasatura classica e la barba ricamata, oggi gestito da tre donne. Un angolo di pace, su appuntamento.",
-  "url":"https://rotenzark.github.io/i-vigentini/",
-  "telephone":"+39 02 5830 0369",
-  "foundingDate":"1968",
-  "priceRange":"€€",
-  "address":{"@type":"PostalAddress","streetAddress":"Viale Beatrice d'Este 49","addressLocality":"Milano","postalCode":"20122","addressCountry":"IT"},
-  "geo":{"@type":"GeoCoordinates","latitude":45.4522345,"longitude":9.196263},
-  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"192"},
-  "openingHoursSpecification":[
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:30","closes":"18:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:30","closes":"15:00"}
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "I Vigentini barbieri dal 1968",
+  "description": "Barbiere tradizionale a Porta Vigentina, Milano, dal 1968. Taglio, barba, rasatura classica e la barba ricamata, oggi gestito da tre donne. Un angolo di pace, su appuntamento.",
+  "url": "https://rotenzark.github.io/i-vigentini/",
+  "telephone": "+39 02 5830 0369",
+  "foundingDate": "1968",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Viale Beatrice d'Este 49",
+    "addressLocality": "Milano",
+    "postalCode": "20122",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4522345,
+    "longitude": 9.196263
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:30",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday"
+      ],
+      "opens": "09:30",
+      "closes": "15:00"
+    }
   ]
 }
 </script>
@@ -344,5 +370,6 @@
 </script>
 
 <script src="js/main.js"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
